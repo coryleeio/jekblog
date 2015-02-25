@@ -1,0 +1,10 @@
+destination: "dist"
+name: "Cory's blog of things"
+exclude: ["README.md", "LICENSE", ".bowerrc"]
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Cory Lee"
