@@ -1,0 +1,71 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import "theme1";
+
+body {
+	font: 100% $font-stack;
+	font-size: 17px;
+	line-height: 20px;
+	background: $light-background-color;
+}
+
+.backgroundLight {
+	background: $light-background-color;
+}
+
+.backgroundDark {
+	background: $dark-background-color;
+}
+
+.accentColor {
+	background: $accent-color;
+}
+
+.accentText {
+	color: $accent-color;
+}
+
+.textLight {
+	color: $light-text-color;
+}
+
+.textDark {
+	color: $dark-text-color;
+}
+
+.primaryHeader {
+	margin-top: 0px;
+	padding: 55px 20px;
+}
+
+.navstyle {
+	height:100%;
+}
+
+.child-right {
+    position: absolute;
+    right: 0;
+}
+
+.maincontainer {
+	margin-top: -10px;
+}
+
+.mainmargin {
+	padding: 10px 80px;
+}
+
+.sidebar{
+	padding-top: 27px;
+	position: fixed;
+	a {
+		padding: 10px;
+		color: $light-text-color;
+	}
+
+	.entry {
+		padding: 10px;
+	}
+}

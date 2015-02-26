@@ -1,6 +1,9 @@
 destination: "dist"
-name: "Cory's blog of things"
+name: "Cory's blog of the things"
 exclude: ["README.md", "LICENSE", ".bowerrc"]
+sass:
+    sass_dir: _sass
+    style: :compressed
 defaults:
   -
     scope:
