@@ -1,11 +1,11 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
+exclude_sidebar: true
 ---
 
 @import "theme1";
-
 body {
-	
+	min-height:100vh;
 	position:relative;
 	font: 100% $font-stack;
 	font-size: 17px;
@@ -39,37 +39,31 @@ body {
 
 .primaryHeader {
 	margin-top: 0px;
-	padding: 55px 20px;
+	padding: 25px 20px 0px 20px;
 }
 
-.maincontainer {
-	margin-top: -10px;
+.signOff {
+	margin-left:45px;
+	padding-bottom:20px;
 }
 
-.mainmargin {
+.mainMargin {
 	padding: 10px 80px;
 }
 
-.relative
-{
-	position:relative;
-}
-
-.sidebar{
-	padding-top: 27px;
-	position: fixed;
-	a {
-		padding: 10px;
-		color: $light-text-color;
-	}
-
-	.entry {
-		padding: 10px;
-	}
-}
-
-.child-right {
+.sidebarWrap {
     position: absolute;
     right: 0;
-    min-height:100%;
+    min-height: 100%;
+    .sidebar {
+		padding-top: 27px;
+		position: fixed;
+		a {
+			padding: 10px;
+			color: $light-text-color;
+		}
+		.entry {
+			padding: 10px;
+		}
+	}
 }

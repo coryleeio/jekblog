@@ -1,8 +1,15 @@
-<div class="col-md-3 col-sm-3 col-xs-3 accentColor child-right">
+<div class="col-md-3 col-sm-3 col-xs-3 accentColor sidebarWrap">
 	<div class="sidebar">
-		<div class="entry" role="presentation"><a href="#">Home</a></div>
-		<div class="entry"  role="presentation"><a href="#">Recent Posts</a></div>
-		<div class="entry"  role="presentation"><a href="#">About</a></div>
-		<div class="entry"  role="presentation"><a href="#">Contact</a></div>
+		{% for node in site.pages %}
+			{% unless node.exclude_sidebar == true %}
+			  {% if page.url == node.url %}
+			    <div class="entry active" role="presentation">
+			    	<a href="{{node.url}}" class="active">{{ node.title }}</a>
+			    </div>
+			  {% else %}
+			    <div class="entry" role="presentation"><a href="{{node.url}}">{{ node.title }}</a></div>
+			  {% endif %}
+		{% endunless %}
+		{% endfor %}
 	</div>
 </div>
