@@ -5,6 +5,8 @@
 @import "theme1";
 
 body {
+	
+	position:relative;
 	font: 100% $font-stack;
 	font-size: 17px;
 	line-height: 20px;
@@ -40,21 +42,17 @@ body {
 	padding: 55px 20px;
 }
 
-.navstyle {
-	height:100%;
-}
-
-.child-right {
-    position: absolute;
-    right: 0;
-}
-
 .maincontainer {
 	margin-top: -10px;
 }
 
 .mainmargin {
 	padding: 10px 80px;
+}
+
+.relative
+{
+	position:relative;
 }
 
 .sidebar{
@@ -68,4 +66,10 @@ body {
 	.entry {
 		padding: 10px;
 	}
+}
+
+.child-right {
+    position: absolute;
+    right: 0;
+    min-height:100%;
 }
