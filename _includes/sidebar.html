@@ -3,11 +3,11 @@
 		{% for node in site.pages %}
 			{% unless node.exclude_sidebar == true %}
 			  {% if page.url == node.url %}
-			    <div class="entry active" role="presentation">
-			    	<a href="{{node.url}}" class="active">{{ node.title }}</a>
+			    <div class="entry active">
+			    	<a href="{{node.url}}">{{ node.title }}</a>
 			    </div>
 			  {% else %}
-			    <div class="entry" role="presentation"><a href="{{node.url}}">{{ node.title }}</a></div>
+			    <div class="entry"><a href="{{node.url}}">{{ node.title }}</a></div>
 			  {% endif %}
 		{% endunless %}
 		{% endfor %}
