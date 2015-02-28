@@ -2,81 +2,9 @@
 # Front matter comment to ensure Jekyll properly reads file.
 exclude_sidebar: true
 ---
-
 @import "theme1";
-body {
-	min-height:100vh;
-	position:relative;
-	font: 100% $font-stack;
-	font-size: 17px;
-	line-height: 20px;
-	background: $light-background-color;
-}
-
-.backgroundLight {
-	background: $light-background-color;
-}
-
-.backgroundDark {
-	background: $dark-background-color;
-}
-
-.accentColor {
-	background: $accent-color;
-}
-
-.accentText {
-	color: $accent-color;
-}
-
-.textLight {
-	color: $light-text-color;
-}
-
-.textDark {
-	color: $dark-text-color;
-}
-
-.primaryHeader {
-	margin-top: 0px;
-	padding: 25px 20px 0px 20px;
-}
-
-.signOff {
-	margin-left: 45px;
-	padding-bottom: 20px;
-}
-
-.mainMargin {
-	padding: 10px 80px;
-}
-
-.sidebarWrap {
-    position: absolute;
-    right: 0;
-    min-height: 100%;
-    padding:0px;
-    .sidebar {
-    	width:100%;
-    	padding-top: 27px;
-    	position: fixed;
-    	a {
-    		display:block;
-    		width:100%;
-    		padding: 10px;
-    		color: $light-text-color;
-    		text-decoration: none;
-    	}
-
-		.entry {
-			width:100%;
-    		border-radius: 3px;
-			padding: 7px;
-		}
-
-		.entry:hover, .active {
-			background: darken( $accent-color, 10%);
-		}
-	}
-}
-
+@import "colors";
+@import "base";
+@import "header";
+@import "sidebar";
+@import "pagination";

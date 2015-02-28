@@ -1,0 +1,46 @@
+.sidebarWrap {
+    position: absolute;
+    right: 0;
+    min-height: 100%;
+    padding:0px;
+    max-width:200px;
+
+    .fa {
+    	width:16px;
+    }
+
+    .sidebar {
+    	width:100%;
+    	padding-top: 10px;
+    	position: fixed;
+
+    	.linkWrap
+		{
+			display:inline-block;
+			width:100%;
+			padding:15px;
+		}
+
+		a {
+			overflow:hidden;
+			color: $light-text-color;
+			text-decoration: none;
+		}
+
+		i {
+			margin-right:10px;
+			display:inline-block;
+		}
+
+		.entry {
+			white-space:nowrap;
+			overflow:hidden;
+			width:100%;
+    		border-radius: 5px;
+		}
+
+		.entry:hover, .active {
+			background: darken( $accent-color, $change-percent);
+		}
+	}
+}

@@ -1,0 +1,17 @@
+
+body {
+	min-height:100vh;
+	position:relative;
+	font: 100% $font-stack;
+	font-size: 17px;
+	line-height: 20px;
+	background: $light-background-color;
+}
+
+.mainMargin {
+	padding: 10px 80px;
+}
+
+.fa {
+	color: white;
+}

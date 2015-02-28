@@ -1,11 +1,12 @@
 {% include header.html %}
-
 <div class="row">
 	<div class="col-md-9 col-sm-9 col-xs-9 mainMargin">
 		<h2><b>{{ page.title }}</b></h2>
 		{{ content }}
+		{% if page.is_post %}
+			{% include pagination.html %}
+		{% endif %}
 	</div>
 	{% include sidebar.html %}
 </div>
-
 {% include footer.html %}

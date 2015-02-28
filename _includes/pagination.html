@@ -1,0 +1,6 @@
+{% if page.previous %}
+	<a href="{{ page.previous.url }}"><div class="previous paginationButton"><i class="fa fa-arrow-circle-o-left"></i><div>Previous</div></div></a>
+{% endif %} 
+{% if page.next %}
+	<a href="{{ page.next.url }}"><div class="next paginationButton"><div>Next</div><i class="fa fa-arrow-circle-o-left fa-rotate-180"></i></div></a>
+{% endif %} 

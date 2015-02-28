@@ -11,3 +11,15 @@ defaults:
     values:
       layout: "default"
       author: "Cory Lee"
+      is_post: false
+  - 
+    scope: 
+      path: "_drafts"
+    values:
+      is_post: true
+  - 
+    scope: 
+      path: "_posts"
+    values:
+      is_post: true
+

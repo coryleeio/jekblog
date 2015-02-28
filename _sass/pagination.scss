@@ -1,0 +1,20 @@
+.paginationButton {
+	display: inline-block;
+	padding:12px;
+	background: $accent-color;
+	color:white;
+	border-radius: 5px;
+
+	div {
+		display:inline-block;
+		margin: 0px 5px;
+	}
+}
+
+.paginationButton.previous {
+	float:left;
+}
+
+.paginationButton.next {
+	float:right;
+}
