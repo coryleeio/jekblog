@@ -1,5 +1,11 @@
 <div class="datebox">
-	<div class="month"><weak>{{page.date | date: '%b' }}</weak></div>
-	<div class="day"><strong>{{page.date | date: '%-d' }}</strong></div>
-	<div class="year"><weak>{{page.date | date: '%Y' }}</weak></div>
+	{% if page.is_post %}
+		<div class="month"><weak>{{page.date | date: '%b' }}</weak></div>
+		<div class="day"><strong>{{page.date | date: '%-d' }}</strong></div>
+		<div class="year"><weak>{{page.date | date: '%Y' }}</weak></div>
+	{% else %}
+		<div class="month"><weak>{{post.date | date: '%b' }}</weak></div>
+		<div class="day"><strong>{{post.date | date: '%-d' }}</strong></div>
+		<div class="year"><weak>{{post.date | date: '%Y' }}</weak></div>
+	{% endif %}
 </div>

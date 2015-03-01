@@ -1,4 +1,5 @@
 <h3>{{ post.title }}</h3>
-<span class="faded">posted on: {{ post.date | date_to_long_string }}</span><br>
-<a href="{{ post.url }}">Read More</a>
-
+{% include datebox.html %}
+<p style="preview">{{post.content | strip_html | truncatewords:50 | append:'..' }}</p>
+<a class="btn my-btn btn-sm" href="{{ post.url }}">
+  <i class="fa-high fa fa-book pull-left"></i>Read More</a>
