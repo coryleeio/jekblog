@@ -1,14 +1,22 @@
 body {
-	min-height:100vh;
-	position:relative;
+	min-height: 100vh;
+	position: relative;
 	font: 100% $font-stack;
 	font-size: 17px;
 	line-height: 20px;
 	background: $light-background-color;
 }
 
-.mainMargin {
+.archive-line-item {
+	margin-bottom:10px;
+}
+
+.main-margin {
 	padding: 10px 80px;
+}
+
+.mobile-pad {
+	margin-top: 40px;
 }
 
 .fa {
@@ -18,13 +26,12 @@ body {
 .faded {
 	color: #666;
 	font-style: italic;
-	margin-left: 1em;
+	margin-left: 12px;
 	padding: 4px;
-	font-size: .8em;
+	font-size: 14px;
 }
 
 .fa-high {
 	position: relative;
-	top:3px;
+	top: 3px;
 }
-

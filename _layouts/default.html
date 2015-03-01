@@ -1,10 +1,10 @@
 {% include header.html %}
-{% include mobile_nav.html %}
-
+<div class="mobile-pad hidden-lg visible-xs-* 
+hidden-sm hidden-md"></div>
 <div class="row">
-	<div class="col-md-9 col-sm-9 col-xs-12 mainMargin">
+	<div class="col-md-9 col-sm-9 col-xs-12 main-margin">
 		<h2 id="title">
-			<b>{{ page.title }}</b>
+			<strong>{{ page.title }}</strong>
 		</h2>
 		{% if page.is_post %}
 			{% include datebox.html %}

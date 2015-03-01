@@ -1,13 +1,13 @@
-<div class="col-md-3 col-sm-3 col-xs-0 accentColor sidebarWrap">
+<div class="col-md-3 col-sm-3 col-xs-0 sidebar-wrap">
 	<div class="sidebar">
 		{% for node in site.pages %}
 			{% unless node.exclude_sidebar == true %}
 			  {% if page.url == node.url %}
 			    <div class="entry active">
-			    	<a href="{{node.url}}"><div class="linkWrap"><i class="fa {{ node.font-awesome-icon }} fa-1x"></i>{{ node.title }}</div></a>
+			    	<a href="{{node.url}}"><div class="link-wrap"><i class="fa {{ node.font-awesome-icon }} fa-1x"></i>{{ node.title }}</div></a>
 			    </div>
 			  {% else %}
-			    <div class="entry"><a href="{{node.url}}"><div class="linkWrap"><i class="fa {{ node.font-awesome-icon }} fa-1x"></i>{{ node.title }}</div></a></div>
+			    <div class="entry"><a href="{{node.url}}"><div class="link-wrap"><i class="fa {{ node.font-awesome-icon }} fa-1x"></i>{{ node.title }}</div></a></div>
 			  {% endif %}
 		{% endunless %}
 		{% endfor %}

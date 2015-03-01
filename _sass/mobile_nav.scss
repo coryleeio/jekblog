@@ -1,13 +1,50 @@
-.mobileNav {
+.mobile-nav {
 	background:$accent-color;
-	padding:10px;
-	min-height:60px;
-	color: $light-text-color;
-	.hamburger{
-		border: 3px solid $light-text-color;
-		padding:3px;
-		font-size:1.6em;
-		float:right;
-		border-radius:.2em;
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+}
+
+#mobile-collapse.navbar-collapse {
+	background-color: $accent-color;
+	li {
+		&:hover {
+			background: darken($accent-color, $change-percent);
+		}
+		&.active {
+			a {
+				background: darken($accent-color, $change-percent);
+			}
+		}
+		a {
+			color:white;
+		}
 	}
+}
+
+.navbar-header {
+	.navbar-toggle {
+		border-color: $light-text-color;
+		background-color: darken($accent-color, $change-percent);
+		&.collapsed {
+			background-color: $accent-color;
+		}
+		.icon-bar {
+			background-color: $light-text-color;
+		}
+
+		&:hover {
+			background-color: darken($accent-color, $change-percent);
+		}
+
+		&[aria-expanded="true"] {
+			background-color: darken($accent-color, $change-percent);
+		}
+	}
+
+	.navbar-brand{
+		color:$light-text-color;
+	}
+
+	background:$accent-color;
 }

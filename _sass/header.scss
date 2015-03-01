@@ -1,9 +1,15 @@
-.primaryHeader {
+.primary-header {
+	color: $light-text-color;
 	margin-top: 0px;
 	padding: 25px 20px 0px 20px;
 }
 
-.signOff {
+.sign-off {
+	color: $light-text-color;
 	margin-left: 45px;
 	padding-bottom: 20px;
+}
+
+.header-lg {
+	background: $dark-background-color;
 }

@@ -1,9 +1,10 @@
-.sidebarWrap {
+.sidebar-wrap {
     position: absolute;
     right: 0;
     min-height: 100%;
     padding:0px;
     max-width:200px;
+    background-color: $accent-color;
 
     .fa {
     	width:16px;
@@ -14,7 +15,7 @@
     	padding-top: 10px;
     	position: fixed;
 
-    	.linkWrap
+    	.link-wrap
 		{
 			display:inline-block;
 			width:100%;

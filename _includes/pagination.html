@@ -1,10 +1,13 @@
+<div class="pagination-wrap">
 {% if page.previous %}
-<a class="btn my-btn btn-sm pull-left" href="{{ page.previous.url }}">
-  <i class="fa fa-arrow-circle-o-left"></i> Previous</a>
+	<a class="btn my-btn btn-sm pull-left" href="{{ page.previous.url }}">
+	  <i class="fa fa-arrow-circle-o-left"></i> Previous</a>
 {% endif %} 
 {% if page.next %}
-<a class="btn my-btn btn-sm pull-right" href="{{ page.next.url }}">
-  Next<i class="fa-high fa fa-arrow-circle-o-left fa-rotate-180 pull-right"></i></a>
+	<a class="btn my-btn btn-sm pull-right" href="{{ page.next.url }}">
+	  Next<i class="fa-high fa fa-arrow-circle-o-left fa-rotate-180 pull-right"></i></a>
+
 {% endif %}
+</div> <!-- close pagination wrap-->
 <div class="pagination-break">
 </div>
