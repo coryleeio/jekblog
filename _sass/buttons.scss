@@ -1,0 +1,14 @@
+.my-btn {
+	background: $accent-color;
+	color: $light-text-color;
+	padding:7px 14px;
+	font-size:14px;
+	&:hover {
+		color: $light-text-color;
+		background: darken($accent-color, $change-percent);
+	}
+}
+
+.pagination-break {
+	clear:both;
+}

@@ -1,6 +1,10 @@
 {% if page.previous %}
-	<a href="{{ page.previous.url }}"><div class="previous paginationButton"><i class="fa fa-arrow-circle-o-left"></i><div>Previous</div></div></a>
+<a class="btn my-btn btn-sm pull-left" href="{{ page.previous.url }}">
+  <i class="fa fa-arrow-circle-o-left"></i> Previous</a>
 {% endif %} 
 {% if page.next %}
-	<a href="{{ page.next.url }}"><div class="next paginationButton"><div>Next</div><i class="fa fa-arrow-circle-o-left fa-rotate-180"></i></div></a>
-{% endif %} 
+<a class="btn my-btn btn-sm pull-right" href="{{ page.next.url }}">
+  Next<i class="fa fa-arrow-circle-o-left fa-rotate-180 pull-right"></i></a>
+{% endif %}
+<div class="pagination-break">
+</div>

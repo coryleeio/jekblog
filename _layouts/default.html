@@ -1,10 +1,18 @@
 {% include header.html %}
+{% include mobile_nav.html %}
+
 <div class="row">
-	<div class="col-md-9 col-sm-9 col-xs-9 mainMargin">
-		<h2><b>{{ page.title }}</b></h2>
+	<div class="col-md-9 col-sm-9 col-xs-12 mainMargin">
+		<h2 id="title">
+			<b>{{ page.title }}</b>
+		</h2>
+		{% if page.is_post %}
+			{% include datebox.html %}
+		{% endif %}
 		{{ content }}
 		{% if page.is_post %}
-			{% include pagination.html %}
+				{% include pagination.html %}
+				{% include more_articles.html %}
 		{% endif %}
 	</div>
 	{% include sidebar.html %}

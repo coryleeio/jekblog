@@ -22,4 +22,9 @@ defaults:
       path: "_posts"
     values:
       is_post: true
+  -
+    scope:
+      path: "json"
+    values:
+      layout: "json"
 

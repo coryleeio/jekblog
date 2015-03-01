@@ -1,0 +1,33 @@
+.datebox {
+	color: $light-text-color;
+	min-width:40px;
+	max-width:50px;
+	position:absolute;
+	left:20px;
+	margin-top:4px;
+	background:$accent-color;
+	border-top-right-radius:0.5em;
+	border-bottom-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	.year {
+		min-width:40px;
+		font-size:11px;
+		padding: 0px 6px;
+		text-align: center;
+	}
+
+	.month {
+		min-width:40px;
+		font-size:11px;
+		text-align: center;
+		padding: 0px 6px;
+	}
+
+	.day {
+		min-width:40px;
+		padding: 5px 0px;
+		background:$dark-background-color;
+		text-align: center;
+		font-size:25px;
+	}
+}
