@@ -4,7 +4,7 @@
     min-height: 100%;
     padding:0px;
     max-width:200px;
-    background-color: $accent-color;
+    background-color: $secondary-color;
 
     .fa {
     	width:16px;
@@ -42,7 +42,7 @@
 		}
 
 		.entry:hover, .active {
-			background: darken( $accent-color, $change-percent);
+			background: darken( $secondary-color, $change-percent);
 		}
 	}
 }

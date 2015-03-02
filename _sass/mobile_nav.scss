@@ -1,19 +1,19 @@
 .mobile-nav {
-	background:$accent-color;
+	background:$primary-color;
 	z-index: 2;
 	position: fixed;
 	width: 100%;
 }
 
 #mobile-collapse.navbar-collapse {
-	background-color: $accent-color;
+	background-color: $primary-color;
 	li {
 		&:hover {
-			background: darken($accent-color, $change-percent);
+			background: darken($primary-color, $change-percent);
 		}
 		&.active {
 			a {
-				background: darken($accent-color, $change-percent);
+				background: darken($primary-color, $change-percent);
 			}
 		}
 		a {
@@ -25,20 +25,20 @@
 .navbar-header {
 	.navbar-toggle {
 		border-color: $light-text-color;
-		background-color: darken($accent-color, $change-percent);
+		background-color: darken($primary-color, $change-percent);
 		&.collapsed {
-			background-color: $accent-color;
+			background-color: $primary-color;
 		}
 		.icon-bar {
 			background-color: $light-text-color;
 		}
 
 		&:hover {
-			background-color: darken($accent-color, $change-percent);
+			background-color: darken($primary-color, $change-percent);
 		}
 
 		&[aria-expanded="true"] {
-			background-color: darken($accent-color, $change-percent);
+			background-color: darken($primary-color, $change-percent);
 		}
 	}
 
@@ -46,5 +46,5 @@
 		color:$light-text-color;
 	}
 
-	background:$accent-color;
+	background:$primary-color;
 }

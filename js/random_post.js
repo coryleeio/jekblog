@@ -21,11 +21,11 @@
 
                     if (counter == (numberOfPosts - 1))
                     {
-                        divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p>');
+                        divRandomPosts.append('<p><a class="pretty\-link" href="' + postHREF + '">' + postTitle + '</a></p>');
                     }
                     else
                     {
-                        divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p>');
+                        divRandomPosts.append('<p><a class="pretty\-link" href="' + postHREF + '">' + postTitle + '</a></p>');
                     }
 
                     randomIndexUsed.push(randomIndex);

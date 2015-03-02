@@ -4,7 +4,11 @@ body {
 	font: 100% $font-stack;
 	font-size: 17px;
 	line-height: 20px;
-	background: $light-background-color;
+	background: $text-background-color;
+}
+
+.pretty-link {
+	color: $primary-color;
 }
 
 .archive-line-item {
