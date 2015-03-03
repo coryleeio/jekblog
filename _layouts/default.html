@@ -11,6 +11,7 @@ hidden-sm hidden-md"></div>
 		{% endif %}
 		{{ content }}
 		{% if page.is_post %}
+				{% include comments.html %}
 				{% include pagination.html %}
 				{% include more_articles.html %}
 		{% endif %}
