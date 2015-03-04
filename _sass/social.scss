@@ -1,0 +1,26 @@
+.social {
+	margin:15px 17px 15px 0px;
+	float:right;
+	.social-wrap {
+		text-align: center;
+		margin: 0 auto;
+		font-size:13px;
+		.icon {
+			margin-right:7px;
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.social {
+		float:right;
+		margin:50px;
+		.social-wrap {
+			font-size:17px;
+		}
+		.icon {
+			margin-right:10px;
+		}
+	}
+ }

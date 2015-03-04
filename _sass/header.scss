@@ -12,4 +12,10 @@
 
 .header-lg {
 	background: $primary-color;
+	height:115px;
+}
+
+.main-header-wrap {
+	display:inline-block;
+	min-width:35%;
 }
