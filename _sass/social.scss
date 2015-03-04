@@ -1,12 +1,26 @@
 .social {
 	margin:15px 17px 15px 0px;
 	float:right;
+	display:none;
 	.social-wrap {
 		text-align: center;
 		margin: 0 auto;
-		font-size:13px;
+		font-size:11px;
 		.icon {
 			margin-right:7px;
+		}
+	}
+}
+@media (min-width: 347px) {
+	.social {
+		display:block;
+	}
+}
+
+@media (min-width: 400px) {
+	.social{
+		.social-wrap{
+			font-size:14px;
 		}
 	}
 }
