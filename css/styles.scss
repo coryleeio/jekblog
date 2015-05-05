@@ -10,3 +10,9 @@ exclude_sidebar: true
 @import "datebox";
 @import "mobile_nav";
 @import "social";
+
+/* images are responsive */ 
+img {
+    max-width:100%;
+    height:auto;
+}
