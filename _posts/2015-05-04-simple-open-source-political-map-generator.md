@@ -1,3 +1,6 @@
+---
+description: Open source political map generator and the nuances of it's construction.
+---
 
 ![Final image of map generated using a voronoi diagram]({{ site.url }}/images/polmapgen1-4.png)
 
