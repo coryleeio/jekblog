@@ -1,0 +1,3 @@
+[submodule "political-map-generator"]
+	path = political-map-generator
+	url = git@github.com:iskar909/political-map-generator.git
