@@ -1,6 +1,9 @@
 # jekblog
 A blog written in the Jekyll framework
 
+`$ git checkout git@github.com:iskar909/jekblog.git`
+`$ git submodule update --init --recursive`
+
 docker rm -f jekyll
 rm -rf ./dist
 
