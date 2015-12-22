@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -rf ./dist
+docker rm -f jekyll
+git submodule update --init --recursive
+docker-machine create --driver virtualbox dev
+docker-machine start dev
+eval "$(docker-machine env dev)"
