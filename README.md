@@ -1,5 +1,8 @@
 # jekblog
 A blog written in the Jekyll framework
+
+### Handy commands:
+
 #### Checkout project
 `$ git checkout --recursive git@github.com:iskar909/jekblog.git`
 
