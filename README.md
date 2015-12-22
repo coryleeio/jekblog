@@ -3,12 +3,14 @@ A blog written in the Jekyll framework
 
 ### Handy commands:
 
+#### Setup docker host with docker-machine
+`$ docker-machine create --driver virtualbox dev && eval "$(docker-machine env dev)"`
+
 #### Checkout project
 `$ git checkout --recursive git@github.com:iskar909/jekblog.git`
 
 #### Update submodules
 `$ git submodule update --init --recursive`
-
 
 #### Purge old containers
 	$ docker rm -f jekyll
