@@ -8,7 +8,7 @@ A blog written in the Jekyll framework
 
 
 #### Purge old containers
-	docker rm -f jekyll
-	rm -rf ./dist
+	$ docker rm -f jekyll
+	$ rm -rf ./dist
 #### Run project
-	docker run --rm --name jekyll --volume=/$(pwd):/srv/jekyll -p $(docker-machine ip `docker-machine active`):4000:4000    tal --force_polling jekyll serve --increment
+	$ docker run --rm --name jekyll --volume=/$(pwd):/srv/jekyll -p $(docker-machine ip `docker-machine active`):4000:4000    tal --force_polling jekyll serve --increment
