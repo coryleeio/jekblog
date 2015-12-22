@@ -1,5 +1,4 @@
 #!/bin/bash
 
 ./setup-docker-host
-echo "Visit site at: $(docker-machine ip `docker-machine active`)"
 docker run --rm --name jekyll --volume=$(pwd):/srv/jekyll -p $(docker-machine ip `docker-machine active`):80:4000 jekyll/jekyll jekyll serve --incremental
