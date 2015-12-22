@@ -2,7 +2,7 @@
 A blog written in the Jekyll framework currently living at: [corylee.io](http://corylee.io)
 
 ### Requirements: 
-Docker
+[Docker](https://www.docker.com/docker-toolbox)
 
 ### Windows commands:
 #### To start with drafts included:
@@ -18,3 +18,9 @@ Docker
 #### To build for production:
 `$ ./linux-publish`
 
+
+#### Add a new project
+`$ git submodule add git@github.com:iskar909/political-map-generator.git`
+
+#### Update submodules
+`$ git submodule update --init --recursive`
