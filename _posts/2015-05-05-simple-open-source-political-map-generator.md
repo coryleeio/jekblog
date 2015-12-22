@@ -26,7 +26,7 @@ For fun I applied a random splattering of color to a Voronoi diagram:
 ![Voronoi diagram with colors applied randomely like stained glass]({{ site.url }}/images/polmapgen1-2.png)
 
 
-Now that we have a diagram, we will attempt to break our diagram into a series of political zones, for this i use a random floodfill, performing one step at a time across a series of zones until no cells remain.
+Now that we have a diagram, we will attempt to break our diagram into a series of political zones, for this I use a random floodfill, performing one step at a time across a series of zones until no cells remain.
 
 
 The algorithm is pretty simple:
