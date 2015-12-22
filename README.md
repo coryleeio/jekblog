@@ -5,22 +5,22 @@ A blog written in the Jekyll framework currently living at: [corylee.io](http://
 [Docker](https://www.docker.com/docker-toolbox)
 
 ### Windows commands:
-#### To start with drafts included:
+##### To start with drafts included:
 `$ ./start`
 
-#### To build for production:
+##### To build for production:
 `$ ./publish`
 
 ### Linux commands:
-#### To start with drafts included:
+##### To start with drafts included:
 `$ ./linux-start`
 
-#### To build for production:
+##### To build for production:
 `$ ./linux-publish`
 
 
-#### Add a new project
+##### Add a new project
 `$ git submodule add git@github.com:iskar909/political-map-generator.git`
 
-#### Update submodules
+##### Update submodules
 `$ git submodule update --init --recursive`
