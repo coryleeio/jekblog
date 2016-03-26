@@ -20,7 +20,7 @@ A blog written in the Jekyll framework currently living at: [corylee.io](http://
 
 
 ##### Add a new project
-`$ git submodule add git@github.com:iskar909/political-map-generator.git`
+`$ git submodule add git@github.com:coryleeio/political-map-generator.git`
 
 ##### Update submodules
 `$ git submodule update --init --recursive`

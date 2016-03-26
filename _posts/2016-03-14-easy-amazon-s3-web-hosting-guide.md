@@ -1,5 +1,6 @@
 ---
 description: Hosting static sites cheaply with AWS S3
+is_post: true
 ---
 
 I'm going to show how I host this very site for < $0.50 USD a month using AWS.  Specifically I will walk through how to host a static website on AWS utilizing S3 and Route 53.

@@ -16,12 +16,12 @@ defaults:
       is_post: false
   - 
     scope: 
-      path: "_drafts"
+      path: "drafts"
     values:
       is_post: true
   - 
     scope: 
-      path: "_posts"
+      path: "posts"
     values:
       is_post: true
   -
