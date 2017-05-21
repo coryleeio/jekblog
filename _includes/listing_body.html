@@ -1,5 +1,5 @@
 <h3>{{ post.title }}</h3>
 {% include datebox.html %}
-<p style="preview">{{post.content | strip_html | truncatewords:50 }}</p>
+<p style="preview">{{post.content | markdownify | strip_html | truncatewords:50 }}</p>
 <a class="btn my-btn expo btn-sm" href="{{ post.url }}">
   <i class="fa-high fa fa-book pull-left"></i>Read More</a>

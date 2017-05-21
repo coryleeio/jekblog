@@ -3,10 +3,10 @@ description: Open source political map generator and the nuances of it's constru
 is_post: true
 ---
 
-![Final image of map generated using a voronoi diagram]({{ site.url }}/images/polmapgen1-4.png)
+![Final image of map generated using a voronoi diagram](/images/polmapgen1-4.png)
 
 
-So recently i've been reading some really interesting articles on map generation that inspired me to make the generator that created the map seen above.  You can find that generator [here]({{ :url }}/political-map-generator), and the sourcecode can be found on [my github](https://github.com/coryleeio/political-map-generator) for those that are interested.  One article I read was this excellent [article by Amit Patel](http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/demo.html) detailing the generation of terrain using voronoi diagrams.  It's a very detailed article you can easily spend a few days shuffling through it, and even better, it has the source included. I've never done anything with maps before, but it got me excited so I decided to give it a go.
+So recently i've been reading some really interesting articles on map generation that inspired me to make the generator that created the map seen above.  You can find that generator [here]({{ page.url }}/political-map-generator), and the sourcecode can be found on [my github](https://github.com/coryleeio/political-map-generator) for those that are interested.  One article I read was this excellent [article by Amit Patel](http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/demo.html) detailing the generation of terrain using voronoi diagrams.  It's a very detailed article you can easily spend a few days shuffling through it, and even better, it has the source included. I've never done anything with maps before, but it got me excited so I decided to give it a go.
 
 Amit's generator is beautiful, but it only creates islands, although Amit does provide some advice on how continents might be achieved.  I decided to try my hand at creating a world map initially, but that's a pretty complex problem, and ultimately I decided this might make a good second project, I wanted to limit the scope of this project to a weekend to ensure that it got completed. So I decided to scrap the world map generator for now, and instead repurpose my code into a political map generator.
 
@@ -15,7 +15,7 @@ While researching I also found this [article by Andy Gainey](http://experilous.c
 My approach starts with a Voronoi diagram, like so:
 
 
-![Voronoi diagram]({{ site.url }}/images/polmapgen1-1.png)
+![Voronoi diagram](/images/polmapgen1-1.png)
 
 
 Voronoi diagrams could warrant a post in their own right and have numerous applications, I suggest checking out the [wikipedia entry](http://en.wikipedia.org/wiki/Voronoi_diagram#Applications) if you would like to learn more about them. 
@@ -24,7 +24,7 @@ Voronoi diagrams could warrant a post in their own right and have numerous appli
 For fun I applied a random splattering of color to a Voronoi diagram:
 
 
-![Voronoi diagram with colors applied randomely like stained glass]({{ site.url }}/images/polmapgen1-2.png)
+![Voronoi diagram with colors applied randomely like stained glass](/images/polmapgen1-2.png)
 
 
 Now that we have a diagram, we will attempt to break our diagram into a series of political zones, for this I use a random floodfill, performing one step at a time across a series of zones until no cells remain.
@@ -46,7 +46,7 @@ The algorithm is pretty simple:
 Here is the result of the process above:
 
 
-![political zones defined with no water yet added]({{ site.url }}/images/polmapgen1-3.png)
+![political zones defined with no water yet added](/images/polmapgen1-3.png)
 
 
 Now I know, this is totally not efficient, BUT it does result in pretty erratic zone selection, since the algorithm doesn't always color a cell, they don't all expand at the same rate, which is great as not all countries are the same size. 
@@ -57,7 +57,7 @@ The next step is to simply drop some of the zones into the ocean, but which ones
 
 Here is our example map after dropping plates off of the edges at random, and cleaning up the insides of our zones:
 
-![Final image of generated polticial zones with water]({{ site.url }}/images/polmapgen1-4.png)
+![Final image of generated polticial zones with water](/images/polmapgen1-4.png)
 
 
 
@@ -66,7 +66,7 @@ Here is our example map after dropping plates off of the edges at random, and cl
 Due to the erraticness of the floodfill, you can simply set the water percentage to 100% and get islands:
 
 
-![political island picture]({{ site.url }}/images/polmapgen2-4.png)
+![political island picture](/images/polmapgen2-4.png)
 
 
 Single, and multiple islands can be produced in addition to bays, continents, etc.  The implementation is relatively trivial and can be put together in an evening or two, (or just use mine!).  I'm going to definitely make a more thorough attempt at map generation in the future as it's a particiuarly interesting area of study.

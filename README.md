@@ -2,25 +2,20 @@
 A blog written in the Jekyll framework currently living at: [corylee.io](http://corylee.io)
 
 ### Requirements: 
-[Docker](https://www.docker.com/docker-toolbox)
+[Docker](https://www.docker.com/)
+[Docker Compose](https://docs.docker.com/compose/install/)
 
-### Windows commands:
-##### To start with drafts included:
-`$ ./start`
 
-##### To build for production:
-`$ ./publish`
+#### Start
 
-### Linux commands:
-##### To start with drafts included:
-`$ ./linux-start`
+	git clone https://github.com/coryleeio/jekblog
+	$ git submodule update --init --recursive
+	docker-compose up
 
-##### To build for production:
-`$ ./linux-publish`
+##### Publish
 
+	aws s3 sync ./dist s3://corylee.io --cache-control="max-age=300" --sse --delete
 
 ##### Add a new project
-`$ git submodule add git@github.com:coryleeio/political-map-generator.git`
 
-##### Update submodules
-`$ git submodule update --init --recursive`
+	$ git submodule add git@github.com:coryleeio/political-map-generator.git
