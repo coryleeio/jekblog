@@ -10,7 +10,9 @@ Recently, I've been working on a 2D isometric sprite game in my spare time. Duri
 
 I decided to publish said system as a stand-alone module in hopes that it will help others in a similar situation or serve as a good starting point for someone. 
 
-[You can download it here](https://github.com/coryleeio/gridpath)
+[You can check out the code here](https://github.com/coryleeio/gridpath)
+
+[You can download the unitypackage from here](https://github.com/coryleeio/Gridpath/releases/)
 
 The solution is barebones, only a couple hundred lines, but it's multithreaded, fairly fast, MIT licensed, and has a visual debugger (seen above).  It was designed specifically to support 2D on an X and Y coordinate plane, so in Unity if you just change your camera to Orthongonal projection and drop this in, you'll have a fairly good starting point for 2D grid and 2D isometric games.
 
