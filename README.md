@@ -14,7 +14,7 @@ A blog written in the Jekyll framework currently living at: [corylee.io](http://
 
 ##### Publish
 
-	aws s3 sync ./dist s3://corylee.io --cache-control="max-age=300" --sse --delete
+	aws s3 sync ./dist s3://corylee.io --cache-control="max-age=300" --profile cory --sse --delete
 
 ##### Add a new project
 
