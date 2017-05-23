@@ -1,6 +1,6 @@
 destination: "dist"
 name: "Blog of the things"
-description: "A generally tech oriented blog about things that interest it's author."
+description: "A generally tech-oriented blog about things that interest its author."
 url: http://corylee.io
 exclude: ["README.md", "LICENSE", ".bowerrc"]
 sass:
